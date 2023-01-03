@@ -1,0 +1,291 @@
+/* ibm-plex-sans-500 - latin_cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/ibm-plex-sans-v14-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/ibm-plex-sans-v14-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ibm-plex-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/ibm-plex-sans-v14-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/ibm-plex-sans-v14-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/roboto-v30-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v30-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/roboto-v30-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v30-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Common */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #290636;
+}
+
+.container  {
+  width: 1278px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+img {
+  display: block; /* убрать полосу под картинкой, которая типо высота строки */
+  max-width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 512px;
+  padding: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 4px solid #4B0A64;
+  background-color: #4B0A64;
+}
+
+.btn-transparent {
+  color: #290636;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Header */
+.header {
+  padding: 40px 0;
+  background-color: #290636;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 47px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-item {
+  margin-left: 80px;
+}
+
+.menu-link {
+  font-size: 32px;
+  line-height: 38px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Product */
+.product {
+  padding: 77px 0 150px;
+  background-color: rgba(75, 10, 100, .03);
+}
+
+.product-wrap {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 -15px;
+}
+
+.product-visual {
+  width: 41.66%;
+  padding: 0 15px;
+}
+
+.product-info {
+  width: 58.33%;
+  padding: 0 15px;
+}
+
+.product-title {
+  font-size: 72px;
+  line-height: 86px;
+  font-weight: 700;
+}
+
+.product-desc {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.product-order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 135px;
+}
+
+.product-price {
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 68px;
+}
+
+/* Lead */
+.lead {
+  text-align: center;
+  color: #fff;
+  background-image: url('../images/bg-lead.jpg');
+  background-color: gray;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.lead-fade {
+  padding: 230px 0;
+  background-color: rgba(41, 6, 54, .3);
+}
+
+.lead-title {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 83px;
+}
+
+.lead-text {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+/* Options */
+.options {
+  padding: 150px 0;
+  background-color: rgba(75, 10, 100, .03);
+}
+
+.options-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  padding: 0;
+  list-style: none;
+}
+
+.options-item {
+  width: 50%;
+  padding: 15px;
+}
+
+.options-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 50px 40px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+.options-name {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 62px;
+}
+
+.options-desc {
+  margin-top: 48px;
+  margin-bottom: 0;
+  font-size: 32px;
+  line-height: 42px;
+  opacity: .6;
+}
+
+/* Order */
+.order {
+  text-align: center;
+  background-image: url('../images/bg-order.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.order-fade {
+  padding: 230px 0;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.order-text {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+/* Footer */
+.footer {
+  padding: 42px 0;
+  color: #fff;
+  background-color: #290636;
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright {
+  margin: 0;
+}
+
+.social {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social-item {
+  margin-left: 15px;
+}
+
+.social-link {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+  background-position: center center;
+}
